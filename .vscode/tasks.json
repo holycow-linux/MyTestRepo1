@@ -4,9 +4,17 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "My Build",
+            "group": "build",
             "type": "shell",
-            "command": "echo Hello"
+            "command": "g++",
+            "args": [
+                "-o",
+                "main",
+                "src/main.cpp"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
-    ]
-}
+    ]}
